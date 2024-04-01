@@ -125,3 +125,94 @@ body {
     font-family: deltarune;
     font-size: 20px;
 }
+
+@media screen and (max-width: 1910px) {
+
+    html {
+        overflow: hidden scroll;
+    }
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden scroll;
+    }
+
+    .topbackground {
+        animation: none;
+        width: 100vw;
+        height: 400px;
+        object-fit: cover;
+        margin-top: 10px;
+    }
+    
+    .toplogo {
+        animation: none;
+        width: 100vw;
+        height: 200px;
+        margin-top: -310px;
+    }
+    
+    .droidl {
+        width: 500px;
+    }
+
+    .logob {
+        animation: none;
+        width: calc(100vw - 20px);
+        height: 400px;
+        object-fit: cover;
+    }
+
+    @keyframes starting-anim-l {
+        0% {
+            opacity: 0;
+            height: 984px;
+            width: 100%;
+            margin-top: -1000px;
+        }
+        50% {
+            opacity: 1;
+            height: 984px;
+            width: 100%;
+            margin-top: -1000px;
+        }
+    }
+
+    @keyframes starting-anim-b {
+        0% {
+            opacity: 0;
+            height: 984px;
+            width: 100%;
+        }
+        50% {
+            opacity: 1;
+            height: 984px;
+            width: 100%;
+        }
+    }
+
+    .bottom {
+        margin-top: 180px;
+        height: 1200px;
+        gap: 40px;
+        animation: none;
+        margin-bottom: 40px;
+    }
+
+    .bottomp {
+        object-fit: cover;
+        width: 320px;
+        height: 320px;
+    }
+
+}
+
+@media screen and (max-width: 1120px) { 
+    .bottom {
+        flex-direction: column;
+    }
+    .droidl {
+        width: 300px;
+    }
+}
