@@ -11,6 +11,14 @@ body {
     margin: auto;
 }
 
+img {
+    image-rendering: crisp-edges;
+}
+
+source {
+    image-rendering: crisp-edges;
+}
+
 .topbackground {
     height: 550px;
     width: 100%;
@@ -34,11 +42,11 @@ body {
 }
 
 .topbackground {
-    animation: starting-anim-b 4s ease;
+    animation: starting-anim-b 4s ease-in-out;
 }
 
 .toplogo {
-    animation: starting-anim-l 4s ease ;
+    animation: starting-anim-l 4s ease-in-out;
 }
 
 .bottom {
@@ -114,7 +122,7 @@ body {
 
 .bottomp {
     width: 320px;
-    height: 100%;
+    height: 320px;
     border-radius: 10px;
 }
 

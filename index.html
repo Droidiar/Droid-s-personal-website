@@ -7,46 +7,57 @@
     <link rel="stylesheet" href="Assets/CSS/font.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="Assets/JS/index.js"></script>
-    <title>Lost without your loveee....</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="Assets/Pictures/PNG/favicon.png">
     <!--If you judge my code, there will be terrible things that will come to you.-->
 </head>
 <body>
-    <div class="topbackground">
+    <div class="topbackground" aria-hidden="true">
         <picture>
             <img class="logob" type="image/webp" src="Assets/Pictures/Logo Background.webp" loading="eager" alt="">
             <source class="logob" type="image/png" src="Assets/Pictures/PNG/Logo Background.png" loading="eager" alt="">
         </picture>
     </div>
-    <div class="toplogo">
+    <div class="toplogo" aria-hidden="true">
         <picture>
-            <img class="droidl" src="Assets/Pictures/Droid (Deltarune font).webp" type="image/webp" loading="eager">
+            <img class="droidl" src="Assets/Pictures/Droid (Deltarune font).webp" type="image/webp" loading="eager" alt="">
             <source class="droidl" src="Assets/Pictures/PNG/Droid (Deltarune font).png" type="image/png" loading="eager" alt="">
         </picture>    
 
     </div>
 
-    <div class="bottom">
-        <a href="about.html">
-            <picture>
-            <img src="Assets/Pictures/About.webp" type="image/webp" loading="lazy" class="about bottomp">
-            <source src="Assets/Pictures/PNG/About.png" loading="lazy" type="image/png" class="about bottomp">
+    <footer class="bottom">
+        <a href="about.html" >
+            <picture aria-hidden="true" alt="about">
+            <img src="Assets/Pictures/About.webp" type="image/webp" loading="lazy" class="about bottomp" alt="about">
+            <source src="Assets/Pictures/PNG/About.png" loading="lazy" type="image/png" class="about bottomp" alt="about">
             </picture>
             About
         </a>
-        <a href="kins.html">
-            <picture>
-                <img src="Assets/Pictures/Kins.webp" loading="lazy" type="image/webp" class="about bottomp">
-                <source src="Assets/Pictures/PNG/Kins.png" loading="lazy" type="image/png" class="about bottomp">
+        <a href="kins.html" >
+            <picture aria-hidden="true" alt="kins">
+                <img src="Assets/Pictures/Kins.webp" loading="lazy" type="image/webp" class="about bottomp"alt=" kins">
+                <source src="Assets/Pictures/PNG/Kins.png" loading="lazy" type="image/png" class="about bottomp" alt="kins">
             </picture>
             kins
         </a>
         <a href="dni.html">
-            <picture>
-                <img src="Assets/Pictures/dni.webp" loading="lazy" type="type/webp" class="dni bottomp">
-                <source src="Assets/Pictures/PNG/dni.png" loading="lazy" type="type/png" class="dni bottomp">
-                dni
+            <picture aria-hidden="true" alt="dni">
+                <img src="Assets/Pictures/dni.webp" loading="lazy" type="type/webp" class="dni bottomp" alt="dni">
+                <source src="Assets/Pictures/PNG/dni.png" loading="lazy" type="type/png" class="dni bottomp" alt="dni">
             </picture>
+            dni
         </a>
-    </div>
+        <a href="portfolio.html">
+            <picture>
+                <img src="Assets/Pictures/portfolio.webp" loading="lazy" type="type/webp" id="portfolio" class="bottomp" alt="">
+                <source src="Assets/Pictures/PNG/portfolio.png" loading="lazy" type="type/png" id="portfolio" class="bottomp" alt="">
+            </picture>
+            portfolio
+        </a>
+    </footer>
 </body>
 </html>
