@@ -131,6 +131,7 @@ body {
   flex-direction: column;
   overflow: hidden scroll;
   padding: 0px 10px 0px 10px;
+  gap: 5px;
 }
 
 
