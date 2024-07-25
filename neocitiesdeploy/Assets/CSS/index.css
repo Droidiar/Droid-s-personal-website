@@ -1,0 +1,226 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(40, 40, 40);
+    height: 984px;
+    width: 1920px;
+    overflow: hidden;
+    margin: auto;
+}
+
+img {
+    image-rendering: crisp-edges;
+}
+
+source {
+    image-rendering: crisp-edges;
+}
+
+.topbackground {
+    height: 550px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 30;
+}
+
+.toplogo {
+    position: relative;
+    left: 0px;
+    margin-top: -550px;
+    height: 540px;
+    width: 1920px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+
+.topbackground {
+    animation: starting-anim-b 4s ease-in-out;
+}
+
+.toplogo {
+    animation: starting-anim-l 4s ease-in-out;
+}
+
+.bottom {
+    animation: starting-anim-bottom 5s ease;
+}
+
+@keyframes starting-anim-b {
+    0% {
+        opacity: 0;
+        height: 984px;
+        width: 1920px;
+    }
+    50% {
+        opacity: 1;
+        height: 984px;
+        width: 1920px;
+    }
+}
+
+@keyframes starting-anim-l {
+    0% {
+        opacity: 0;
+        height: 984px;
+        width: 1920px;
+        margin-top: -1000px;
+    }
+    50% {
+        opacity: 1;
+        height: 984px;
+        width: 1920px;
+        margin-top: -1000px;
+    }
+}
+
+@keyframes starting-anim-bottom {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.droidl {
+    width: 400px;
+    height: auto;
+    z-index: 999;
+}
+
+.logob {
+    width: 1900px;
+    height: 520px;
+    border-radius: 10px;
+    filter: brightness(0.6);
+}
+
+.bottom {
+    height: 340px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bottom a {
+    width: 320px;
+    height: 100%;
+}
+
+.bottomp {
+    width: 320px;
+    height: 320px;
+    border-radius: 10px;
+}
+
+.bottom a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-family: deltarune;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1910px) {
+
+    html {
+        overflow: hidden scroll;
+    }
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden scroll;
+    }
+
+    .topbackground {
+        animation: none;
+        width: 100vw;
+        height: 400px;
+        object-fit: cover;
+        margin-top: 10px;
+    }
+    
+    .toplogo {
+        animation: none;
+        width: 100vw;
+        height: 200px;
+        margin-top: -310px;
+    }
+    
+    .droidl {
+        width: 500px;
+    }
+
+    .logob {
+        animation: none;
+        width: calc(100vw - 20px);
+        height: 400px;
+        object-fit: cover;
+    }
+
+    @keyframes starting-anim-l {
+        0% {
+            opacity: 0;
+            height: 984px;
+            width: 100%;
+            margin-top: -1000px;
+        }
+        50% {
+            opacity: 1;
+            height: 984px;
+            width: 100%;
+            margin-top: -1000px;
+        }
+    }
+
+    @keyframes starting-anim-b {
+        0% {
+            opacity: 0;
+            height: 984px;
+            width: 100%;
+        }
+        50% {
+            opacity: 1;
+            height: 984px;
+            width: 100%;
+        }
+    }
+
+    .bottom {
+        margin-top: 180px;
+        height: 1200px;
+        gap: 40px;
+        animation: none;
+        margin-bottom: 40px;
+    }
+
+    .bottomp {
+        object-fit: cover;
+        width: 320px;
+        height: 320px;
+    }
+
+}
+
+@media screen and (max-width: 1120px) { 
+    .bottom {
+        flex-direction: column;
+    }
+    .droidl {
+        width: 300px;
+    }
+}

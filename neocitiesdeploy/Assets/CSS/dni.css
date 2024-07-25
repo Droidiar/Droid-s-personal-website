@@ -1,0 +1,59 @@
+* {
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: grey;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 40px;
+}
+
+.dni {
+    min-width: 80%;
+
+}
+
+.explanation {
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.explanation.visible {
+    pointer-events: unset;
+    height: 200px;
+    width: 100%;
+    opacity: 1;
+    animation: 1.5s explanationVisible ease-in-out;
+}
+
+@keyframes explanationVisible {
+    0% {opacity: 0; width: 0px; height: 0px;}
+}
+
+.explanation.notVisible {
+    animation: 1.5s explanationNotVisible ease-in-out; 
+}
+
+@keyframes explanationNotVisible {
+    0% {opacity: 1; width: 100%; height: 200px;}
+    100% {opacity: 0; width: 0px; height: 0px;}
+}
+
+footer {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+#back {
+
+}
