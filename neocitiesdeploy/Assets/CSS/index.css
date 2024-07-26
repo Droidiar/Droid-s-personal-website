@@ -202,7 +202,7 @@ source {
 
     .bottom {
         margin-top: 180px;
-        height: 1200px;
+        height: auto;
         gap: 40px;
         animation: none;
         margin-bottom: 40px;
@@ -216,7 +216,7 @@ source {
 
 }
 
-@media screen and (max-width: 1120px) { 
+@media screen and (max-width: 1490px) { 
     .bottom {
         flex-direction: column;
     }
