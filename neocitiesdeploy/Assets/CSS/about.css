@@ -25,7 +25,7 @@ source {
 }
 
 body {
-  width: fit-content;
+  width: 1248px;
   height: 900px;
   margin: auto;
   background-color: rgb(40, 40, 40);
@@ -84,13 +84,12 @@ body {
 }
 
 .top {
-  width: fit-content;
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  gap: 1.2rem;
+  justify-content: space-between;
 }
 
 .freddywrapper {
@@ -133,6 +132,7 @@ body {
   overflow: hidden scroll;
   padding: 0px 10px 0px 10px;
   gap: 5px;
+  max-width: 920px;
 }
 
 
@@ -161,7 +161,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: fit-content;
+  width: 100%;
 }
 
 .links {
@@ -170,7 +170,7 @@ hr {
   linear-gradient(to right, rgb(155, 100, 17), darkorchid) border-box;
   border-radius: 10px;
   border: 4px solid transparent;
-  width: 1248px;
+  width: 100%;
   height: 300px;
   display: flex;
   z-index: 20;
@@ -231,7 +231,7 @@ p a:hover {
   color: wheat;
 }
 
-.blinkies {
+.blinkies {`
   margin-top: 0px;
   display: flex;
   flex-direction: row;
@@ -246,8 +246,17 @@ p a:hover {
 }
 
 .blinkies picture img, .blinkies picture source {
-  width: 200px;
-  height: 30px;
+  width: 210px;
+  height: auto;
+}
+
+.blinkies#pressure picture img, .blinkies#pressure picture source {
+  width: 100px;
+  height: auto;
+}
+
+#pressure.blinkies a{
+  justify-content: space-around;
 }
 
 img, source {
