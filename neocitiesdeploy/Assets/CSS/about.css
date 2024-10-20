@@ -188,7 +188,7 @@ hr {
   margin-top: 20px;
 }
 
-.twitter, .tumblr, .cohost, .pronounspage, .github {
+.twitter, .tumblr, .bluesky, .pronounspage, .github {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -196,7 +196,7 @@ hr {
   height: 200px;
 }
 
-.twitter-l, .github-l, .cohost-l {
+.twitter-l, .github-l, .bluesky-l {
   height: 160px;
   width: 160px;
 }
