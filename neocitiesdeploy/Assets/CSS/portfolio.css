@@ -34,6 +34,7 @@ a {
     width: 100vw;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 
@@ -44,7 +45,31 @@ a {
     color: blue;
 }
 
-.back:hover p {
+.blinkie p {
+    padding: 10px;
+    font-size: 30px;
+}
+
+.blinkie a {
+    text-decoration: underline;
+    color: blue;
+}
+
+.back:hover p, .blinkie a:hover {
     text-decoration: none;
     color: black;
 }
+
+.blinkie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blinkie img {
+    width: 88px;
+    height: 31px;
+    align-self: center;
+}
+
