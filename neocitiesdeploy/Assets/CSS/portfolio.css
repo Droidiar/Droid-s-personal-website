@@ -50,12 +50,12 @@ a {
     font-size: 30px;
 }
 
-.blinkie a {
+.blinkie a, .kofiButton p {
     text-decoration: underline;
     color: blue;
 }
 
-.back:hover p, .blinkie a:hover {
+.back:hover p, .blinkie a:hover, .kofiButton p:hover {
     text-decoration: none;
     color: black;
 }
@@ -73,3 +73,14 @@ a {
     align-self: center;
 }
 
+.kofiButton {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a img {
+    width: 200px;
+    height: auto;
+}
